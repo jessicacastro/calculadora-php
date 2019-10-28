@@ -13,23 +13,36 @@
 	$calculadora->setNum1($n1);
 	$calculadora->setNum2($n2);
 
+	function somar($n1,$n2){
+		return $n1+$n2;
+	}
+	function subtrair($n1,$n2){
+		return $n1-$n2;
+	}
+	function multiplicar($n1,$n2){
+		return $n1*$n2;
+	}
+	function dividir($n1,$n2){
+		return $n1/$n2;
+	}
+
 	switch ($operacao) {
 		case 'somar':
-			$calculadora->somar();
+			$calculadora->somar($n1,$n2);
 			break;
 
 		case 'subtrair':
-			$calculadora->subtrair();
+			$calculadora->subtrair($n1,$n2);
 			break;
 
 
 		case 'multiplicar':
-			$calculadora->multiplicar();
+			$calculadora->multiplicar($n1,$n2);
 			break;
 
 
 		case 'dividir':
-			$calculadora->dividir();
+			$calculadora->dividir($n1,$n2);
 			break;
 	}
 
